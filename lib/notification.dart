@@ -23,14 +23,14 @@ void myNotification() {
             .DismissAction, // Behaves as the same way as a user dismiss action, dismissing the respective notification and firing dismissMethod. Ignores autoDismissible property.
       ),
       NotificationActionButton(
-        color: Colors.green,
-        key: 'AGREED2',
-        label: 'Answer',
-        autoDismissible: true,
-        isDangerousOption: false,
-        actionType: ActionType
-            .KeepOnTop, // Fires the respective action without close the notification status bar and don't bring the app to foreground.
-      ),
+          color: Colors.green,
+          key: 'AGREED2',
+          label: 'Answer',
+          autoDismissible: true,
+          isDangerousOption: false,
+          actionType: ActionType
+              .Default // Is the default action type, forcing the app to goes foreground.
+          ),
     ],
   );
 }
